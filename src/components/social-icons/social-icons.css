@@ -1,0 +1,15 @@
+.social-icons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 20rem;
+  margin-top: 3rem;
+  justify-items: center;
+}
+.social-icon {
+  font-size: 1.5rem;
+  color: var(--clr-grey-1);
+  transition: var(--transition);
+}
+.social-icon:hover {
+  color: var(--clr-primary-5);
+}
