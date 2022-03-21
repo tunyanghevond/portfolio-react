@@ -1,14 +1,24 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import "./about.css";
+import Title from "../../components/title/Title";
+import Footer from "../../components/footer/Footer";
 
 const About = () => {
   return (
-    <div>
-      About
-      <Link to="/" className="btn">
-        Back to home
-      </Link>
-    </div>
+    <>
+      <section class="section single-page">
+        <Title title="about me" />
+        <div class="section-center page-info">
+          <p>
+            Hello, I am John Doe and I am a web developer. I live and work in
+            somewhere warm. I spend most of my day, experimenting with HTML, CSS
+            and JavaScript (and its endless list of frameworks). I enjoy coding
+            and the challenge of learning something new everyday.
+          </p>
+        </div>
+      </section>
+      <Footer />
+    </>
   );
 };
 

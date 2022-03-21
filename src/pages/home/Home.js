@@ -1,11 +1,19 @@
 import React from "react";
-import Navbar from "../../components/navbar/Navbar";
 import Header from "../../components/header/Header";
+import About from "../../components/about/About";
+import Project from "../../components/projects/Project";
+import Connect from "../../components/connect/Connect";
+import Timeline from "../../components/timeline/Timeline";
+import Footer from "../../components/footer/Footer";
 const Home = () => {
   return (
     <>
-      <Navbar />
       <Header />
+      <About />
+      <Project />
+      <Timeline />
+      <Connect />
+      <Footer />
     </>
   );
 };

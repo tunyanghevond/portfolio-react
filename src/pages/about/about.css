@@ -1,0 +1,7 @@
+.single-page {
+  background: var(--clr-primary-5);
+  min-height: calc(100vh - 5rem - 200px);
+}
+.page-info {
+  max-width: 700px;
+}

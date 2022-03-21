@@ -1,10 +1,9 @@
 import React, { useState } from "react";
 import "./navbar.css";
-import Links from "../links/Links";
-import logo from "../../images/logo.svg";
-import { FaBars } from "react-icons/fa";
-import { FaTimes } from "react-icons/fa";
-import SocialIcons from "../social-icons/SocialIcons";
+import Logo from "../../images/logo.svg";
+import Links from "../../constants/links";
+import Icons from "../../constants/socialIcons";
+import { FaBars, FaTimes } from "react-icons/fa";
 
 const Navbar = () => {
   const [showSidebar, setShowSidebar] = useState(false);
@@ -13,7 +12,7 @@ const Navbar = () => {
     <nav className="nav">
       <div className="nav-center">
         <div className="nav-header">
-          <img src={logo} alt="nav-logo" className="nav-logo" />
+          <img src={Logo} alt="nav-logo" className="nav-logo" />
           <button
             className="nav-btn"
             onClick={() => setShowSidebar(!showSidebar)}
@@ -29,17 +28,11 @@ const Navbar = () => {
             >
               <FaTimes />
             </button>
-            <ul className="sidebar-links">
-              <Links />
-            </ul>
-            <ul className="social-icons">
-              <SocialIcons />
-            </ul>
+            <Links styleClass="sidebar-links" />
+            <Icons />
           </div>
         </aside>
-        <ul className="nav-links">
-          <Links />
-        </ul>
+        <Links styleClass="nav-links" />
       </div>
     </nav>
   );

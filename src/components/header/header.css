@@ -16,6 +16,15 @@
 .hero-center h4 {
   color: var(--clr-grey-5);
 }
+.hero-center p {
+  color: var(--clr-grey-5);
+  display: flex;
+  align-items: center;
+}
+.hero-center .hero-icon {
+  font-size: 1.5rem;
+  margin-right: 0.5rem;
+}
 .hero-icons {
   justify-items: start;
 }
