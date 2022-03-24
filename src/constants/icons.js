@@ -26,13 +26,8 @@ const tempLinks = icons.map((icon) => {
     </li>
   );
 });
-// I KNOW WE CAN COMBINE IT !!!!!
 
 const Icons = ({ styleClass }) => {
-  return (
-    <ul className={`social-icons ${styleClass ? styleClass : ""}`}>
-      {tempLinks}
-    </ul>
-  );
+  return <ul className={`${styleClass ? styleClass : ""}`}>{tempLinks}</ul>;
 };
 export default Icons;

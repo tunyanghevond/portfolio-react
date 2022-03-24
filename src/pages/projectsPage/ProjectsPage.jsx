@@ -1,22 +1,23 @@
 import React from "react";
-import "./projects.css";
+import "./projects-page.css";
 import { Link } from "react-router-dom";
 import Title from "../../components/title/Title";
-import Footer from "../../components/footer/Footer";
-const Projects = () => {
+import { FaGithub, FaHome } from "react-icons/fa";
+import Img from "../../images/project-1.jpeg";
+const ProjectsPage = () => {
   return (
     <>
       <header className="projects-hero">
         <Title title="My projects" />
       </header>
-      <section className="section">
+      <section className="section projects-page ">
         <div className="section-center projects-page-center">
           <article className="single-project">
             <div className="project-container">
-              <img src="./images/project-1.jpeg" alt="lorem" />
-              <a href="index.html" className="project-icon">
-                <i className="fas fa-home"></i>
-              </a>
+              <img src={Img} alt="lorem" />
+              <Link to="/" className="project-icon">
+                <FaHome />
+              </Link>
             </div>
             <div className="project-details">
               <h4>project name</h4>
@@ -26,7 +27,7 @@ const Projects = () => {
               </p>
               <div className="project-footer">
                 <span>
-                  <i className="fab fa-github"></i>
+                  <FaGithub />
                 </span>
 
                 <a href="https://github.com/">source code</a>
@@ -35,9 +36,8 @@ const Projects = () => {
           </article>
         </div>
       </section>
-      <Footer />
     </>
   );
 };
 
-export default Projects;
+export default ProjectsPage;

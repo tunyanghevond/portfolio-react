@@ -5,9 +5,9 @@
 .hero-img {
   display: none;
 }
-.hero {
+/* .hero {
   background-color: var(--clr-primary-10);
-}
+} */
 .hero-center {
   min-height: calc(100vh - 5rem);
   display: grid;

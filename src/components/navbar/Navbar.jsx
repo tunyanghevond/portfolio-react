@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./navbar.css";
 import Logo from "../../images/logo.svg";
 import Links from "../../constants/links";
-import Icons from "../../constants/socialIcons";
+import Icons from "../../constants/icons";
 import { FaBars, FaTimes } from "react-icons/fa";
 
 const Navbar = () => {
@@ -29,7 +29,7 @@ const Navbar = () => {
               <FaTimes />
             </button>
             <Links styleClass="sidebar-links" />
-            <Icons />
+            <Icons styleClass="social-icons" />
           </div>
         </aside>
         <Links styleClass="nav-links" />

@@ -1,7 +1,6 @@
 import React from "react";
 import "./connect.css";
-import { Link } from "react-router-dom";
-import { Player } from "video-react";
+import Icons from "../../constants/icons";
 
 import connectVideo from "../../videos/connect.mp4";
 import defaultImg from "../../images/project-1.jpeg";
@@ -30,9 +29,7 @@ const Connect = () => {
             magnam totam sapiente culpa quae et fugit doloribus molestias, modi
             soluta.
           </p>
-          <Link to="/contact" className="btn">
-            contact me
-          </Link>
+          <Icons styleClass="connect-icons" />
         </div>
       </div>
     </section>

@@ -1,9 +1,9 @@
-import Project1 from "../../images/project-1.jpeg";
-import Project2 from "../../images/project-2.jpeg";
-import Project3 from "../../images/project-3.jpeg";
-import Project4 from "../../images/project-4.jpeg";
+import Project1 from "../images/project-2.jpeg";
+import Project2 from "../images/project-2.jpeg";
+import Project3 from "../images/project-3.jpeg";
+import Project4 from "../images/project-4.jpeg";
 
-export const projectContent = [
+export const projects = [
   {
     id: 1,
     img: Project1,
@@ -13,7 +13,7 @@ export const projectContent = [
   },
   {
     id: 2,
-    img: Project2,
+    img: Project4,
     url: "/projects",
     title: "project title2",
     class: "project-2",
@@ -27,7 +27,7 @@ export const projectContent = [
   },
   {
     id: 4,
-    img: Project4,
+    img: Project2,
     url: "/projects",
     title: "project title4",
     class: "project-4",

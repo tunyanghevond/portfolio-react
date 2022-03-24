@@ -25,7 +25,6 @@ const tempLinks = links.map((link) => {
     </li>
   );
 });
-// I KNOW WE CAN COMBINE IT !!!!!
 
 const Links = ({ styleClass }) => {
   return <ul className={`${styleClass ? styleClass : ""}`}>{tempLinks}</ul>;

@@ -1,7 +1,7 @@
 import React from "react";
 import "./project.css";
 import { Link } from "react-router-dom";
-import { projectContent } from "./content";
+import { projects } from "../../constants/projects";
 
 const Project = () => {
   return (
@@ -17,7 +17,7 @@ const Project = () => {
         </p>
       </div>
       <div className="section-center project-center">
-        {projectContent.map((item) => {
+        {projects.map((item) => {
           return (
             <Link to={item.url} className={item.class} key={item.id}>
               <article className="project">

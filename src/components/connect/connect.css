@@ -29,7 +29,7 @@
   place-items: center;
 }
 .video-banner {
-  background: var(--clr-primary-10);
+  background: var(--clr-white);
   padding: 3rem 5rem 12rem 5rem;
   text-align: center;
   -webkit-clip-path: polygon(
@@ -51,7 +51,12 @@
     0% 75%
   );
 }
-
+.connect-icons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  max-width: 20rem;
+  margin: 0 auto;
+}
 .video-banner div {
   margin-bottom: 2rem;
 }

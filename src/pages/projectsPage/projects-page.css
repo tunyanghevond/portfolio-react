@@ -1,8 +1,12 @@
 .projects-hero {
-  height: 40vh;
+  /* height: 40vh; */
+  padding-top: 2rem;
   background: var(--clr-primary-10);
   display: grid;
   place-items: center;
+}
+.projects-page {
+  background: var(--clr-primary-10);
 }
 .projects-hero .section-title {
   margin-bottom: 0;
