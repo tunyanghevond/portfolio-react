@@ -1,9 +1,9 @@
 import React from "react";
 import "./connect.css";
-import Icons from "../../constants/icons";
+import { Link } from "react-router-dom";
 
 import connectVideo from "../../videos/connect.mp4";
-import defaultImg from "../../images/project-1.jpeg";
+import defaultImg from "../../images/aregak-resort.jpeg";
 const Connect = () => {
   return (
     <section className="connect">
@@ -21,15 +21,14 @@ const Connect = () => {
       </video>
       <div className="video-banner">
         <div className="section-title">
-          <h2>let's get in touch</h2>
+          <h2>about</h2>
           <div className="underline"></div>
           <p className="video-text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde fuga
-            itaque nam repellat cumque tempore blanditiis amet odio eligendi
-            magnam totam sapiente culpa quae et fugit doloribus molestias, modi
-            soluta.
+           Hello, I am Ghevond and I am a web developer. I live and work in Berlin. I spend most of my day, experimenting with HTML, CSS, JavaScript and React. I enjoy coding and the challenge of learning something new everyday.
           </p>
-          <Icons styleClass="connect-icons" />
+          <Link to="/about" className="btn">
+            learn more
+          </Link>
         </div>
       </div>
     </section>

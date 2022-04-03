@@ -1,10 +1,15 @@
-export const about = [
+export const aboutPage = [
   {
     id: 1,
-    text: "Motivated web developer with over 1 year of front end experience and passion for responsive website design.",
+    text: `Thanks for visiting my website. I am self-taught frontend developer and have passion for responsive web designs and creating intuitive, dynamic user experiences.
+    I am well-organized person, problem solver, independent employee with high attention to detail. In my free time I spend time with my family.`,
   },
   {
     id: 2,
-    text: "I have the skills and training needed to develop and maintain software and to make improvements that will enhance functionality. I have strong problem-solving skills and an ability to work with technical and abstract concepts. I also have extensive knowledge of HTML,CSS and JavaScript technologies and worked closely with React.",
+    text: `Interested in the entire frontend spectrum and working on ambitious projects with like-minded people. `,
+  },
+  {
+    id: 3,
+    text: `Let's make something special.`,
   },
 ];

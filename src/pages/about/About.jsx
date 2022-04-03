@@ -1,19 +1,17 @@
 import React from "react";
 import "./about.css";
 import Title from "../../components/title/Title";
+import {aboutPage} from '../../constants/about'
 
 const About = () => {
   return (
     <>
       <section class="section single-page">
-        <Title title="about me" />
+        <Title title="hi there!" />
         <div class="section-center page-info">
-          <p>
-            Hello, I am John Doe and I am a web developer. I live and work in
-            somewhere warm. I spend most of my day, experimenting with HTML, CSS
-            and JavaScript (and its endless list of frameworks). I enjoy coding
-            and the challenge of learning something new everyday.
-          </p>
+           {aboutPage.map((item) => {
+            return <p key={item.id}>{item.text}</p>;
+          })}
         </div>
       </section>
     </>

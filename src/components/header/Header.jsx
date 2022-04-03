@@ -3,6 +3,7 @@ import "./header.css";
 import HeroImg from "../../images/pexels.png";
 import CV from "../../images/Ghevond_Tunyan_CV.pdf";
 import { MdLocationPin } from "react-icons/md";
+import Icons from '../../constants/icons'
 const Header = () => {
   return (
     <header className="hero">
@@ -16,8 +17,9 @@ const Header = () => {
               <MdLocationPin />
             </span>
             <span>Berlin, Germany</span>
+            
           </p>
-
+           <Icons styleClass="social-icons hero-icons "/>
           <a href={CV} className="btn hero-btn" download>
             Download my CV
           </a>

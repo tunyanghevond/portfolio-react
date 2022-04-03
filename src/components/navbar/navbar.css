@@ -31,7 +31,7 @@
 .social-icons {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  width: 20rem;
+  /* width: 20rem; */
   margin-top: 3rem;
   justify-items: center;
 }

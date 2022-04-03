@@ -5,15 +5,12 @@ import { projects } from "../../constants/projects";
 
 const Project = () => {
   return (
-    <section className=" projects">
+    <section className="projects section">
       <div className="section-title">
-        <h2>Latest Works</h2>
+        <h2>projects</h2>
         <div className="underline"></div>
         <p className="projects-text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde fuga
-          itaque nam repellat cumque tempore blanditiis amet odio eligendi
-          magnam totam sapiente culpa quae et fugit doloribus molestias, modi
-          soluta.
+         Here are some of my recently built projects
         </p>
       </div>
       <div className="section-center project-center">

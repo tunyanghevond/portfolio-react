@@ -26,7 +26,8 @@
   margin-right: 0.5rem;
 }
 .hero-icons {
-  justify-items: start;
+justify-items: start;
+margin-top: 1.5rem;
 }
 .hero-btn {
   margin-top: 1.25rem;

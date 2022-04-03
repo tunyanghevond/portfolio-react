@@ -3,7 +3,7 @@ import "./projects-page.css";
 import { Link } from "react-router-dom";
 import Title from "../../components/title/Title";
 import { FaGithub, FaHome } from "react-icons/fa";
-import Img from "../../images/project-1.jpeg";
+import {projectsPage} from '../../constants/projects';
 const ProjectsPage = () => {
   return (
     <>
@@ -12,28 +12,27 @@ const ProjectsPage = () => {
       </header>
       <section className="section projects-page ">
         <div className="section-center projects-page-center">
-          <article className="single-project">
+         {projectsPage.map(project => {
+           const {id,img,githubUrl,liveUrl,title,text} = project
+           return <article className="single-project" key={id}>
             <div className="project-container">
-              <img src={Img} alt="lorem" />
+              <img src={img} alt="lorem" />
               <Link to="/" className="project-icon">
                 <FaHome />
               </Link>
             </div>
             <div className="project-details">
-              <h4>project name</h4>
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure
-                quasi soluta amet dolor a deleniti!
-              </p>
+              <h4>{title}</h4>
+              <p>{text}</p>
               <div className="project-footer">
                 <span>
-                  <FaGithub />
+                  <a href={githubUrl} target="_blank" rel="noreferrer"><FaGithub /></a>
                 </span>
-
-                <a href="https://github.com/">source code</a>
-              </div>
+                <a href={liveUrl} target="_blank" rel="noreferrer">try it out</a>
             </div>
-          </article>
+            </div>
+          </article> 
+         })}
         </div>
       </section>
     </>
