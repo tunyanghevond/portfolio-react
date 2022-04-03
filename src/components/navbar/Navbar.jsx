@@ -20,15 +20,15 @@ const Navbar = () => {
             <FaBars />
           </button>
         </div>
-        <aside className={showSidebar ? "sidebar show-sidebar" : "sidebar"}>
-          <div>
+        <aside className={showSidebar ? "sidebar show-sidebar" : "sidebar"} >
+          <div onClick={() => setShowSidebar(!showSidebar)}>
             <button
               className="close-btn"
               onClick={() => setShowSidebar(!showSidebar)}
             >
               <FaTimes />
             </button>
-            <Links styleClass="sidebar-links" />
+            <Links styleClass="sidebar-links"/>
             <Icons styleClass="social-icons" />
           </div>
         </aside>

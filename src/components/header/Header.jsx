@@ -21,7 +21,7 @@ const Header = () => {
           </p>
            <Icons styleClass="social-icons hero-icons "/>
           <a href={CV} className="btn hero-btn" download>
-            Download my CV
+            Download CV
           </a>
         </article>
         <article className="hero-img">
