@@ -20,7 +20,7 @@ const icons = [
 const tempLinks = icons.map((icon) => {
   return (
     <li key={icon.id}>
-      <a href={icon.url} className="social-icon">
+      <a href={icon.url} className="social-icon" target="_blank" rel="noreferrer">
         {icon.text}
       </a>
     </li>
