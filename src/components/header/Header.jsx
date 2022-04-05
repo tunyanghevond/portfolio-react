@@ -1,6 +1,6 @@
 import React from "react";
 import "./header.css";
-import HeroImg from "../../images/pexels.png";
+import HeroImg from "../../images/my-photo.JPG";
 import CV from "../../images/Ghevond_Tunyan_CV.pdf";
 import { MdLocationPin } from "react-icons/md";
 import Icons from '../../constants/icons'
